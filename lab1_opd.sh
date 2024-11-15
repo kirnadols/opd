@@ -1,8 +1,11 @@
+chmod -R 700 lab0
+rm -rf lab0
+
 mkdir lab0
 cd lab0
 
 # task 1
-echo -e "task 1 \n\n\n"
+echo -e "---TASK 1---"
 
 touch chimecho4
 touch gorebyss2
@@ -39,10 +42,10 @@ echo "Double-Edge Foul Play Gunk Shot Hyper Voice Icy Wind Iron Tail Knock" >> m
 echo "Off Last Resort Mud-Slap Seed Bomb Shock Wave Sleep Talk Snatch Snore" >> meowth4
 echo "Spite Swift Uproar Water Pulse" >> meowth4
 
-echo -e "task 1 ended \n\n\n"
+echo -e "---TASK 1 DONE---"
 
 # task 2
-echo -e "task 2 \n\n\n"
+echo -e "---TASK 2---"
 
 chmod 400 chimecho4
 chmod 524 chingling6
@@ -63,15 +66,16 @@ chmod 644 gliscor8/raichu
 chmod 620 gorebyss2
 chmod 440 meowth4
 
-echo -e "task 2 ended \n\n\n"
+echo -e "---TASK 2 DONE---"
 
 # task 3.1
 
-echo -e "task 3 \n\n\n"
+echo -e "---TASK 3---\n"
 
 chmod u+r gliscor8
 chmod u+w gliscor8/scizor
 chmod u+w gliscor8/chikorita
+
 mkdir -p tmp/gliscor8
 cp -r gliscor8/* tmp/gliscor8
 mv tmp/gliscor8 gliscor8/scizor
@@ -113,40 +117,53 @@ ln -s meowth4 gliscor8/raichumeowth
 
 cat cranidos6/wurmple gliscor8/probopass > gorebyss2_48
 
-echo -e "task 3 ended \n\n\n"
+chmod u+r gliscor8
+chmod u+r chingling6/persian
+chmod u+r cranidos6/swadloon
 
-# task 4.1 ????!?!??!?!?!???!?!?!?!??! Рекурсивно подсчитать количество символов содержимого файлов из директории lab0, имя которых начинается на 'm', результат записать в файл в директории /tmp, ошибки доступа не подавлять и не перенаправлять
+ls -lR
 
-echo -e "task 4 \n\n\n"
+chmod u-r gliscor8
+chmod u-r chingling6/persian
+chmod u-r cranidos6/swadloon
+
+echo -e "---TASK 3 DONE---\n"
+
+# task 4.1 
+
+echo -e "---TASK 4---\n"
+
+echo -e "---task 4.1--- \n"
 
 ls -R | grep ^m | wc -m >> /tmp/res_task4.1
 
+echo -e "---task 4.1 ended--- \n"
 
 # task 4.2 
-
+echo -e "---task 4.2---"
 ls -lRS | tail -2 2>&1
-
+echo -e "---task 4.2 ended--- \n"
 # task 4.3 
-
+echo -e "–––task 4.3---"
 cat chingling6/magnezone chingling6/litwick cranidos6/wurmple gliscor8/probopass gliscor8/chikorita 2> /dev/null | grep e$
-
+echo -e "---task 4.3 ended––– \n"
 # task 4.4 
-
+echo -e "–––task 4.4–––"
 ls -lRS chingling6 2>&1
-
+echo -e "–––task 4.4 ended––– \n"
 # task 4.5
-
-ls -lRсr | tail -2
-
+echo -e "–––task 4.5---"
+ls -lRtr | tail -2
+echo -e "---task 4.5 ended––– \n"
 # task 4.6
-
-ls -Rtr | grep ^c 2>> /tmp/err_task4.6
-
-echo -e "task 4 ended \n\n\n"
+echo -e "–––task 4.6–––"
+ls -lRtr | grep ^c 2> /tmp/err_task4.6
+echo -e "–––task 4.6 ended––– \n"
+echo -e "---TASK 4 DONE---\n"
 
 # task 5.1
 
-echo -e "task 5 \n\n\n"
+echo -e "---TASK 5---\n"
 
 rm gorebyss2
 
@@ -159,15 +176,14 @@ rm gliscor8/probopass
 rm Copy_*
 
 # task 5.4 
-
 rm -f chingling6/litwickmeow*
 
 # task 5.5
 chmod -R u+rw cranidos6
 rm -r cranidos6
 
-# task 5.6
+# task 5.6 laallaa
 
-rm -r cranidos6/golurk
+rm -rf cranidos6/golurk
 
-echo -e "task 5 ended \n\n\n"
+echo -e "---TASK 5 DONE---"
