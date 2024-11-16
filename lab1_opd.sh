@@ -176,8 +176,9 @@ rm gliscor8/probopass
 rm Copy_*
 
 # task 5.4 
+chmod u+w chingling6
 rm -f chingling6/litwickmeow*
-
+chmod u-w chingling6
 # task 5.5
 chmod -R u+rw cranidos6
 rm -r cranidos6
