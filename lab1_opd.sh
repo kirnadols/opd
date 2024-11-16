@@ -109,9 +109,9 @@ cp meowth4 gliscor8/scizor
 chmod u-r gliscor8
 chmod u-w gliscor8/scizor
 
-# task 3.6
+#!!!task 3.6
 
-ln -s meowth4 gliscor8/raichumeowth
+ ln -s /home/studs/s466824/lab0/meowth4 gliscor8/raichumeowth
 
 # task 3.7
 
@@ -141,7 +141,7 @@ echo -e "---task 4.1 ended--- \n"
 
 # task 4.2 
 echo -e "---task 4.2---"
-ls -lRS | tail -2 2>&1
+ls -lRS 2>&1 | tail -2
 echo -e "---task 4.2 ended--- \n"
 # task 4.3 
 echo -e "–––task 4.3---"
