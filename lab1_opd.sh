@@ -111,7 +111,7 @@ chmod u-w gliscor8/scizor
 
 #!!!task 3.6
 
- ln -s /home/studs/s466824/lab0/meowth4 gliscor8/raichumeowth
+ln -s /home/studs/s466824/lab0/meowth4 gliscor8/raichumeowth
 
 # task 3.7
 
